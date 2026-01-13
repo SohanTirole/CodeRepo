@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+	<!-- service 1 -->
+	<bean id="service1" class="com.spring.Service1">
+		<property name="message" value="Hello this is from Service ! | assigned by xml"></property>
+	</bean>
+	<!-- service 2 -->
+	<bean id="service2" class="com.spring.Service2">
+		<property name="message" value="Hellow this is from Service 2 | assigned by xml"></property>
+	</bean>	
+	<!-- service 3 -->
+	<bean id="service3" class="com.spring.Service3"></bean>
+	
+	<!-- User Class -->
+	<bean id="userservice" class="com.spring.UserService">
+		<property name="service1" ref="service1"></property>
+		<constructor-arg ref="service2"></constructor-arg>
+	</bean>
+</beans>

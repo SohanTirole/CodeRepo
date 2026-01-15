@@ -9,7 +9,7 @@ public class UserService {
 	@Autowired
 	private Service3 service3;
 	
-	@Autowired
+	
 	UserService(Service2 service2){
 		this.service2 = service2;
 	}
@@ -19,10 +19,14 @@ public class UserService {
 		this.service1 = service1; 
 	}
 	
-	@Autowired
+	
+//	UserService(){
+//		System.out.println("This is the defaul-cunstroctor");
+//	}
+//	
 	public void actionPerformed() {
 		System.out.println(service1.getMessage());
+		//service3.printMessagre();
 		service2.printMessage();
-		service3.printMessagre();
 	}
 }

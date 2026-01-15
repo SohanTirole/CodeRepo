@@ -11,7 +11,7 @@
 	</bean>
 	<!-- service 2 -->
 	<bean id="service2" class="com.spring.Service2">
-		<property name="message" value="Hellow this is from Service 2 | assigned by xml"></property>
+		<constructor-arg value="Hello this is Service2 | assigned by bean.xml"></constructor-arg>
 	</bean>	
 	<!-- service 3 -->
 	<bean id="service3" class="com.spring.Service3"></bean>

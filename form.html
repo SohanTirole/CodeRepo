@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="skyblue">
+    <fieldset>
+        <legend align="center"><fieldset><big>Registration Window</big></fieldset></legend>
+        <form action="details.html">
+            <table align="center" cellpadding="3">
+                <caption><h2>Registration Form</h2></caption>
+                <tbody align="center">
+                    <tr>
+                        <td>
+                            <label for="username">User Name</label>
+                        </td>
+                        <td>
+                            <input type="text" value="sohan" id="username" placeholder="Enter Username">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">Email</label>
+                        </td>
+                        <td>
+                            <input type="email" id="email" placeholder="Enter email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">Password</label>
+                        </td>
+                        <td>
+                            <input type="password" id="password" maxlength="8"  minlength="8" name="password" placeholder="Enter Password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="dob">DOB</label>
+                        </td>
+                        <td>
+                            <input type="date" id="dob" name="dob">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="contact">Contact</label>
+                        </td>
+                        <td>
+                            <input type="text" maxlength="10" minlength="10" pattern="[6789][0-9]{9}" id="contact" placeholder="Enter 10 Digit Number" name="contact">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="male">Gender</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="male" value="male" name="gender">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" value="female" name="gender">
+                            <label for="female">Female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="cricket">Hobbies</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="cricket" id="cricket">
+                            <label for="cricket">Cricket</label>
+                            <input type="checkbox" name="football" id="football">
+                            <label for="football">Football</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <label for="subject">Subject</label>
+                        </td>
+                        <td>
+                            <select name="subject" id="subject">
+                                <option value="">Select Subject</option>
+                                <option value="C Language">C Language</option>
+                                <option value="C++ Language">C++ Language</option>
+                                <option value="Java Language">Java Language</option>
+                                <option value="Python Language">Python Language</option>
+                                <option value="JavaScript">JavaScript</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="address">Address</label>
+                        </td>
+                        <td>
+                            <textarea name="address" id="address" cols="21" rows="3"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="upload">Upload</label>
+                        </td>
+                        <td>
+                            <input required type="file" name="file" id="file" multiple8>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>                        
+                        </td>
+                        <td>
+                            <input type="submit" id="adduser" name="adduser" >
+                            <input type="reset" id="reset" name="resetuser" >
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </fieldset>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+package com.spring.service;
+
+import java.util.List;
+
+import com.spring.medel.User;
+
+public interface UserService {
+	public void addUserService(User user);
+	public void updateUserService(User user);
+	public void deleteUserService(int id);
+	public User getUserByIdService(int id);
+	public List<User> getAllUserServices();
+}
